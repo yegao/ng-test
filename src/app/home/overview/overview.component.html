@@ -1,0 +1,3 @@
+<div class="overview" [ngClass]="{ pending: overview.status == 0, success: overview.status==1, fail: overview.status == 2}">
+  <input type="text" value={{overview.title}} (keyup)="keyup($event)" placeholder="计划下一步安排" />
+</div>
